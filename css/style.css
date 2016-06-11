@@ -1,0 +1,127 @@
+body {
+	background-color: #4d515e;
+	position: relative; /* base of .post-card */
+	font-family: monospace;
+}
+
+.post-card {
+	background-color: #fff;
+	width: 800px;
+	height: auto;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	display: table;
+	box-shadow: 3px 9px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.post-card .content {
+	width: 75%;
+	display: table-cell;
+}
+
+.post-card .show-bg {
+	width: 25%;
+	display: table-cell;
+	background-image: url('../image/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center; /* x,y */
+	background-size: cover;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.wrapper {
+	padding: 40px;
+}
+
+.wrapper.border-line {
+	border-bottom: 1px solid #eee;
+}
+
+.post-card .content h1,
+.post-card .content p {
+	padding-bottom: 20px;
+}
+.post-card .content p:first-child {
+	color: #b4bac4;
+	font-weight: bold;
+}
+.post-card .content  h1 {
+	color: #38393e;
+	font-size: 40px;
+}
+.post-card .content  p {
+	color: #9fa8b7;
+	font-size: 14px;
+	line-height: 20px;
+}
+.post-card .content .social {
+	margin-top: 20px;
+}
+.post-card .content .social li {
+	border: 1px solid #eee;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	text-align: center;
+	position: relative;
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	-o-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+}
+
+.post-card .content .social li:hover {
+	box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.2); /* left to right, top to bototom, blur, contrast, color */
+}
+
+.post-card .content .social li a {
+	display: block;
+    padding: 20px;
+    color: #545b67;
+    text-decoration: none;
+    font-weight: bold;
+}
+.post-card .content .social .google::before,
+.post-card .content .social .facebook::before,
+.post-card .content .social .twitter::before {
+	font-family: Fontawesome;
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.post-card .content .social .google::before {
+	content: '\f0d5';
+    color: #d44a38;
+}
+
+.post-card .content .social .facebook::before {
+	content: '\f09a';
+    color: #3b5998;
+}
+
+.post-card .content .social .twitter::before {
+	content: '\f099';
+    color: #4099ff;
+}
+
+.post-card .content .wrapper.bottom li {
+	display: inline-block;
+	color: #545b67;
+}
+
+.post-card .content .wrapper.bottom li:last-child {
+	float: right;
+}
+
+.post-card .content .wrapper.bottom li a {
+	text-decoration: none;
+	color: #9dc950;
+}
+
+.post-card .content .wrapper.bottom li i {
+	font-size: 13px;
+}
